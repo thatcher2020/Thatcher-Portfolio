@@ -1,0 +1,108 @@
+header {
+  flex-direction: row;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  line-height: 1.2;
+  background-color: rgb(240, 227, 249);
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+}
+
+.banner {
+  display: flex;
+  background-size: cover;
+  color: var(--secondary);
+  min-height: 28vh;
+  padding: 2% 4%;
+  text-align: right;
+  background-position: center;
+  align-items: flex-end;
+  background-image: url("/assets/img/pexels-suzy-hazelwood-1629236.jpg");
+}
+
+.banner div {
+  flex: 100%;
+}
+
+.banner h2 {
+  font-size: 2.5rem;
+  line-height: 1.4;
+  display: inline;
+}
+
+.page-wrapper {
+  margin-left: auto;
+  max-width: 95%;
+  margin-right: auto;
+}
+
+img {
+  padding: 10px 0;
+  margin: 25px 0;
+  flex-wrap: wrap;
+  float: right;
+  height: 300px;
+}
+
+.page-wrapper {
+  margin-left: auto;
+  max-width: 95%;
+  margin-right: auto;
+}
+
+.page-section {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex-direction: row;
+}
+
+.page-section>div {
+  flex: 0 0 75%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.project-one {
+  background-image: url("./img/pexels-mikhail-nilov-7583935.jpg");
+}
+
+.project-two {
+  background-image: url("./img/pexels-pat-whelen-6136879.jpg");
+}
+
+.project-three {
+  background-image: url("./img/pexels-pixabay-270236.jpg");
+}
+
+.project-four {
+  background-image: url("./img/pexels-scott-platt-1294238.jpg");
+}
+
+.project-five {
+  background-image: url("./img/pexels-shawn-stutzman-1010496.jpg");
+}
