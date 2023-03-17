@@ -43,12 +43,6 @@ body {
   display: inline;
 }
 
-.page-wrapper {
-  margin-left: auto;
-  max-width: 95%;
-  margin-right: auto;
-}
-
 img {
   padding: 10px 0;
   margin: 25px 0;
@@ -76,6 +70,21 @@ img {
 .page-section>div {
   flex: 0 0 75%;
 }
+
+
+.flex-item {
+  background-size: 100%;
+  font-size: 1rem;
+  margin: 10px;
+  display: flex;
+  align-items: flex-end;
+  min-height: 200px;
+  max-height: 200px;
+  text-decoration: none;
+  flex-basis: calc(50% - 1em);
+}
+
+
 
 
 
