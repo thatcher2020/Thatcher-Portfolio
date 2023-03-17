@@ -5,11 +5,12 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  background-color: rgb(130, 111, 153);
 }
 
 header h1 {
   font-size: 2rem;
-  color: var(--primary);
+  color: rgb(67, 68, 66);
   margin: 0;
 }
 
@@ -24,7 +25,7 @@ body {
 .banner {
   display: flex;
   background-size: cover;
-  color: var(--secondary);
+  color: rgb(247, 247, 245);
   min-height: 28vh;
   padding: 2% 4%;
   text-align: right;
@@ -52,9 +53,9 @@ img {
 }
 
 .page-wrapper {
-  margin-left: auto;
-  max-width: 95%;
-  margin-right: auto;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .page-section {
@@ -67,15 +68,15 @@ img {
   flex-direction: row;
 }
 
-.page-section>div {
-  flex: 0 0 75%;
+.flex-container {
+  flex-wrap: wrap;
+  display: flex;
 }
 
-
 .flex-item {
-  background-size: 100%;
+  background-size: 150%;
   font-size: 1rem;
-  margin: 10px;
+  margin: 8px;
   display: flex;
   align-items: flex-end;
   min-height: 200px;
@@ -84,6 +85,15 @@ img {
   flex-basis: calc(50% - 1em);
 }
 
+.flex-item:first-child {
+  min-height: 200px;
+  flex-basis: 100%;
+}
+
+.flex-item div {
+  background-color: rgb(227, 223, 221);
+  padding: 8px 10px;
+}
 
 
 
