@@ -14,6 +14,8 @@ header h1 {
   margin: 0;
 }
 
+
+
 .banner {
   display: flex;
   background-size: cover;
@@ -90,7 +92,7 @@ img {
 }
 
 .page-wrapper {
-  max-width: 1000px;
+  max-width: 10000px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -107,6 +109,7 @@ img {
 .flex-container {
   flex-wrap: wrap;
   display: flex;
+  width: 70%;
 }
 
 .flex-item {
@@ -141,23 +144,23 @@ img {
 }
 
 .project-one {
-  background-image: url("./img/pexels-mikhail-nilov-7583935.jpg");
+  background-image: url("/assets/img/pexels-mikhail-nilov-7583935.jpg");
 }
 
 .project-two {
-  background-image: url("./img/pexels-pat-whelen-6136879.jpg");
+  background-image: url("/assets/img/pexels-pat-whelen-6136879.jpg");
 }
 
 .project-three {
-  background-image: url("./img/pexels-pixabay-270236.jpg");
+  background-image: url("/assets/img/pexels-pixabay-270236.jpg");
 }
 
 .project-four {
-  background-image: url("./img/pexels-scott-platt-1294238.jpg");
+  background-image: url("/assets/img/pexels-scott-platt-1294238.jpg");
 }
 
 .project-five {
-  background-image: url("./img/pexels-shawn-stutzman-1010496.jpg");
+  background-image: url("/assets/img/pexels-shawn-stutzman-1010496.jpg");
 }
 
 .contact hr {
