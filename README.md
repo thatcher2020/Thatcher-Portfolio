@@ -19,5 +19,3 @@
 
 - to display future projects
 
-
- 
