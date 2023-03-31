@@ -25,7 +25,7 @@ header h1 {
   text-align: right;
   background-position: center;
   align-items: flex-end;
-  background-image: url("../img/pexels-suzy-hazelwood-1629236.jpg");
+  background-image: url("/img/pexels-suzy-hazelwood-1629236.jpg");
 }
 
 body {
@@ -144,23 +144,23 @@ img {
 }
 
 .project-one {
-  background-image: url("../img/pexels-mikhail-nilov-7583935.jpg");
+  background-image: url("/img/pexels-mikhail-nilov-7583935.jpg");
 }
 
 .project-two {
-  background-image: url("../img/pexels-pat-whelen-6136879.jpg");
+  background-image: url("/img/pexels-pat-whelen-6136879.jpg");
 }
 
 .project-three {
-  background-image: url("../img/pexels-pixabay-270236.jpg");
+  background-image: url("/img/pexels-pixabay-270236.jpg");
 }
 
 .project-four {
-  background-image: url("../img/pexels-scott-platt-1294238.jpg");
+  background-image: url("/img/pexels-scott-platt-1294238.jpg");
 }
 
 .project-five {
-  background-image: url("../img/pexels-shawn-stutzman-1010496.jpg");
+  background-image: url("/img/pexels-shawn-stutzman-1010496.jpg");
 }
 
 .contact hr {
