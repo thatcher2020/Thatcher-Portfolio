@@ -4,7 +4,7 @@
   --secondary-color: rgba(0, 0, 0, 0.7);
   --text-color: white;
   --bg-color: rgb(193, 191, 195);
-  --hover-color: rgba(231, 230, 230, 0.2);
+  --hover-color: rgba(13, 13, 150, 0.77);
 }
 
 
@@ -43,9 +43,11 @@ header nav a:hover {
 
 /* Main Content */
 .page-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  .page-wrapper {
+    min-height: calc(100vh - 60px); /* Adjust the 60px to account for the header height and any other spacing */
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .page-section {
@@ -102,15 +104,24 @@ header nav a:hover {
   align-items: flex-end;
 }
 
-.flex-item div {
+.flex-item > div {
   background-color: var(--secondary-color);
   padding: 10px;
   width: 100%;
 }
 
-/* Contact Section */
+.external-links a {
+color: white;
+}
+
+.external-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Contact Section  line got messed*/
 .contact address a {
-  display: inline-block;
+  display: block;
   margin-bottom: 10px;
   text-decoration: none;
   color: inherit;
