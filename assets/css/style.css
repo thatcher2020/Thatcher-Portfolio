@@ -7,11 +7,10 @@
   --hover-color: rgba(13, 13, 150, 0.77);
 }
 
-
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: var(--bg-color);
   line-height: 1.6;
 }
@@ -41,10 +40,18 @@ header nav a:hover {
   background-color: var(--hover-color);
 }
 
+p {
+  margin: 20px;
+  display: block;
+  text-align: center;
+}
+
 /* Main Content */
 .page-wrapper {
   .page-wrapper {
-    min-height: calc(100vh - 60px); /* Adjust the 60px to account for the header height and any other spacing */
+    min-height: calc(
+      100vh - 60px
+    ); /* Adjust the 60px to account for the header height and any other spacing */
     display: flex;
     flex-direction: column;
   }
@@ -83,7 +90,6 @@ header nav a:hover {
   border-radius: 50%;
 }
 
-
 /* Work Section */
 .flex-container {
   display: flex;
@@ -111,7 +117,7 @@ header nav a:hover {
 }
 
 .external-links a {
-color: white;
+  color: white;
 }
 
 .external-links {
@@ -119,7 +125,9 @@ color: white;
   justify-content: space-between;
 }
 
-/* Contact Section  line got messed*/
+.external-links a:hover {
+  background-color: var(--hover-color);
+}
 .contact address a {
   display: block;
   margin-bottom: 10px;
@@ -151,4 +159,3 @@ color: white;
 .project-five {
   background-image: url("../img/pexels-shawn-stutzman-1010496.jpg");
 }
-
