@@ -34,6 +34,10 @@ header nav a {
   color: var(--text-color);
   margin-left: 15px;
   text-decoration: none;
+  border: 2px solid var(--secondary-color);
+  border-color: white;
+  border-radius: 10px;
+  padding: 5px 10px
 }
 
 header nav a:hover {
@@ -140,9 +144,11 @@ p {
 }
 .contact address a {
   display: block;
-  margin-bottom: 10px;
+  margin: 0 auto;
   text-decoration: none;
   color: inherit;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .contact address a:hover {
