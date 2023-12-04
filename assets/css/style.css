@@ -37,7 +37,7 @@ header nav a {
   border: 2px solid var(--secondary-color);
   border-color: white;
   border-radius: 10px;
-  padding: 5px 10px
+  padding: 5px 10px;
 }
 
 header nav a:hover {
@@ -52,13 +52,12 @@ p {
 
 /* Main Content */
 .page-wrapper {
-    min-height: calc(
-      100vh - 60px
-    ); /* Adjust the 60px to account for the header height and any other spacing */
-    display: flex;
-    flex-direction: column;
-  }
-
+  min-height: calc(
+    100vh - 60px
+  ); /* Adjust the 60px to account for the header height and any other spacing */
+  display: flex;
+  flex-direction: column;
+}
 
 .page-section {
   margin-bottom: 10px;
@@ -180,5 +179,4 @@ p {
   .flex-item {
     flex: 1 1 calc(50% - 20px);
   }
-  
 }

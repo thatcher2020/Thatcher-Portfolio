@@ -1,77 +1,43 @@
 # Thatcher-Portfolio
 
-## Description
+## Introduction
 
-- This is a portfolio for displaying projects I have worked on using html and css
+Welcome to the GitHub repository for Joseph Thatcher's personal portfolio website. This site showcases my skills and projects as a web developer, highlighting my journey through Ohio State's Full Stack Web Development Bootcamp.
 
+## Technology Stack
 
-## Table of Contents
+- **HTML5**: For structuring the content of the website.
+- **CSS**: For styling the content, including custom properties for easy customization.
+- **JavaScript**: Used for dynamic content and functionalities.
+- **Font Awesome**: For adding icons.
 
-- [Installation](#installation)
-- [Usage](#usage)
+## Features
 
+### Work
 
-## Installation
+- Showcases various projects:
+  - **Junk Store**: A MERN Stack project.
+  - **JATE**: A project utilizing Node and IoT technologies.
+  - **Note Taker**: A Node/IoT based application.
+  - **Tech Blog**: A blogging platform for tech enthusiasts.
+  - **Weather Locator**: A weather information application.
+- Each project has links to the live version and the source code on GitHub.
 
-- in this application we html and css
+### Contact
 
-## Usage
+- email:Thatcherjoe20@gmail.com
+- github:https://github.com/thatcher2020?tab=repositories
 
-- to display future projects
+## Navigating the Site
 
-          
-          <div class="flex-item project-one">
-            <div>
-              <h3>Junk Store</h3>
-              <div>MERN Stack</div>
-              <div class="external-links">
-                <a href="https://obscure-gorge-38730-852eb11418ba.herokuapp.com/" target="_blank" >See live</a>
-                <a href="https://github.com/thatcher2020/online-store.git" target="_blank" >See source</a>
-              </div>
-            </div>
-          </div>
+- The site has a simple and intuitive navigation bar that links to the different sections: Work and Contact Me.
+- The main page is divided into three primary sections: About Me, Work, and Contact.
 
-          <div class="flex-item project-two">
-            <div>
-              <h3>JATE</h3>
-              <div>Node/IoT</div>
-              <div class="external-links">
-                <a href="https://dry-woodland-75998.herokuapp.com/" target="_blank" >See live</a>
-                <a href="https://github.com/thatcher2020/JATE.git" target="_blank" >See source</a>
-              </div>
-            </div>
-          </div>
+## How to Use
 
-          <div class="flex-item project-three">
-            <div>
-              <h3>Note Taker</h3>
-              <div>Node/IoT</div>
-              <div class="external-links">
-                <a href="https://blooming-plains-64542-ab333328fee2.herokuapp.com/" target="_blank" >See live</a>
-                <a href="https://github.com/thatcher2020/note-taker.git" target="_blank" >See source</a>
-              </div>
-            </div>
-          </div>
-          <!-- need to deploy the tech blog and link the live-->
-          <div class="flex-item project-four">
-            <div>
-              <h3>Tech Blog</h3>
-              <div>Node/IoT</div>
-              <div class="external-links">
-                <a href="https://github.com/thatcher2020/tech-blog.git" target="_blank" >See live</a>
-                <a href="" target="_blank" >See source</a>
-              </div>
-            </div>
-          </div>
+To view the website, you can clone the repository and open the `index.html` file in a browser. Alternatively, you can visit the hosted version of the site (link to be provided).
 
-          <div class="flex-item project-five">
-            <div>
-              <h3>weather Locator</h3>
-              <div>Node/IoT</div>
-              <div class="external-links">
-                <a href="https://thatcher2020.github.io/weather-locator/" target="_blank" >See live</a>
-                <a href="https://github.com/thatcher2020/weather-locator.git" target="_blank" >See source</a>
-              </div>
-            </div>
-          </div>
-          
+## Credits
+
+- Background images for the project sections are sourced from Pexels.
+- Icons provided by Font Awesome.
