@@ -1,113 +1,161 @@
+/* Root variables for easy customization */
+:root {
+  --primary-color: rgb(16, 0, 13);
+  --secondary-color: rgba(0, 0, 0, 0.7);
+  --text-color: white;
+  --bg-color: rgb(193, 191, 195);
+  --hover-color: rgba(13, 13, 150, 0.77);
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: rgb(240, 227, 249);
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bg-color);
   line-height: 1.6;
 }
 
+/* Header Styles */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: rgb(130, 111, 153);
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  background-color: var(--primary-color);
 }
 
 header h1 {
   font-size: 2rem;
-  color: white;
+  color: var(--text-color);
   margin: 0;
 }
 
 header nav a {
-  color: white;
+  color: var(--text-color);
   margin-left: 15px;
   text-decoration: none;
-  padding: 5px;
-  transition: background-color 0.2s ease-in-out;
+  border: 2px solid var(--secondary-color);
+  border-color: white;
+  border-radius: 10px;
+  padding: 5px 10px
 }
 
 header nav a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
+  background-color: var(--hover-color);
 }
 
-.page-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+p {
+  margin: 20px;
+  display: block;
+  text-align: center;
 }
+
+/* Main Content */
+.page-wrapper {
+    min-height: calc(
+      100vh - 60px
+    ); /* Adjust the 60px to account for the header height and any other spacing */
+    display: flex;
+    flex-direction: column;
+  }
+
 
 .page-section {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
+  padding: 20px 35px;
 }
 
 .page-section h2 {
   font-size: 2rem;
-  border-bottom: 2px solid rgb(130, 111, 153);
+  border-bottom: 2px solid var(--primary-color);
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
 
 .about-me-container {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   gap: 20px;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  border: 3px dotted var(--primary-color);
 }
 
-.about-me-container img {
+.about-text {
+  order: 1;
+}
+
+.about-image {
+  order: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
   max-width: 200px;
   border-radius: 50%;
 }
 
+/* Work Section */
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
 .flex-item {
-  flex: 1 1 300px;
+  flex: 1 0 calc(33% - 80px);
   background: no-repeat center center / cover;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
   text-decoration: none;
-  color: inherit;
+  color: var(--text-color);
   padding: 20px;
-  border-radius: 5px;
   text-align: center;
-  position: relative;
   height: 250px;
   display: flex;
   align-items: flex-end;
-  color: white;
 }
 
-.flex-item div {
-  background-color: rgba(130, 111, 153, 0.7);
+.flex-item > div {
+  background-color: var(--secondary-color);
   padding: 10px;
   width: 100%;
 }
 
+.work-container {
+  background-color: white;
+  border-radius: 5px;
+  border: 3px dotted var(--primary-color);
+  padding: 20px;
+}
 
+.external-links a {
+  color: white;
+}
 
+.external-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.external-links a:hover {
+  background-color: var(--hover-color);
+}
 .contact address a {
-  display: inline-block;
-  margin-bottom: 10px;
+  display: block;
+  margin: 0 auto;
   text-decoration: none;
   color: inherit;
-
-  padding: 10px;
-  border-radius: 5px;
-  transition: background-color 0.2s ease-in-out;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .contact address a:hover {
-  background-color: rgba(130, 111, 153, 0.1);
+  background-color: var(--hover-color);
 }
 
+/* Project Image */
 .project-one {
   background-image: url("../img/pexels-mikhail-nilov-7583935.jpg");
 }
@@ -126,4 +174,11 @@ header nav a:hover {
 
 .project-five {
   background-image: url("../img/pexels-shawn-stutzman-1010496.jpg");
+}
+
+@media screen and (max-width: 800px) {
+  .flex-item {
+    flex: 1 1 calc(50% - 20px);
+  }
+  
 }
