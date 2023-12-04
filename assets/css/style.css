@@ -48,17 +48,17 @@ p {
 
 /* Main Content */
 .page-wrapper {
-  .page-wrapper {
     min-height: calc(
       100vh - 60px
     ); /* Adjust the 60px to account for the header height and any other spacing */
     display: flex;
     flex-direction: column;
   }
-}
+
 
 .page-section {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
+  padding: 20px 35px;
 }
 
 .page-section h2 {
@@ -73,6 +73,9 @@ p {
   grid-template-columns: 2fr 1fr;
   gap: 20px;
   align-items: center;
+  background: white;
+  border-radius: 10px;
+  border: 3px dotted var(--primary-color);
 }
 
 .about-text {
@@ -94,17 +97,17 @@ p {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
 .flex-item {
-  flex: 1 1 300px;
+  flex: 1 0 calc(33% - 80px);
   background: no-repeat center center / cover;
   text-decoration: none;
   color: var(--text-color);
   padding: 20px;
   text-align: center;
-  position: relative;
   height: 250px;
   display: flex;
   align-items: flex-end;
@@ -114,6 +117,13 @@ p {
   background-color: var(--secondary-color);
   padding: 10px;
   width: 100%;
+}
+
+.work-container {
+  background-color: white;
+  border-radius: 5px;
+  border: 3px dotted var(--primary-color);
+  padding: 20px;
 }
 
 .external-links a {
@@ -158,4 +168,11 @@ p {
 
 .project-five {
   background-image: url("../img/pexels-shawn-stutzman-1010496.jpg");
+}
+
+@media screen and (max-width: 800px) {
+  .flex-item {
+    flex: 1 1 calc(50% - 20px);
+  }
+  
 }
